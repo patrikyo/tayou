@@ -1,0 +1,24 @@
+import "./Header.css";
+function Header() {
+  return (
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-10">
+          <h1>TAYOU</h1>
+        </div>
+        <nav class="col-2">
+          <ul class="navigation-links">
+            <li>
+              <a href="#">Hem</a>
+            </li>
+            <li>
+              <a href="#">Kontakta</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  );
+}
+
+export default Header;

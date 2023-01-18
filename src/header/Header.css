@@ -1,0 +1,40 @@
+.container {
+    max-width: 940px;
+}
+
+h1 {
+    color: #69b9ff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.navigation-links {
+	list-style:none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+li {
+    flex: 1;
+}
+
+li:hover {
+    color: #2e9dff;
+}
+
+a {
+    text-align: center;
+    color: #676770;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
