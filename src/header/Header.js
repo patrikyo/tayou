@@ -9,10 +9,10 @@ function Header() {
         <nav class="col-2">
           <ul class="navigation-links">
             <li>
-              <a href="#">Hem</a>
+              <a href="www.google.se">Hem</a>
             </li>
             <li>
-              <a href="#">Kontakta</a>
+              <a href="www.google.se">Kontakta</a>
             </li>
           </ul>
         </nav>
