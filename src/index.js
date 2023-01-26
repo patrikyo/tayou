@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import Header from "./header/Header";
 import Hero from "./hero/Hero";
+import Section from "./section/Section";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -12,6 +13,7 @@ root.render(
   <React.StrictMode>
     <Header />
     <Hero />
+    <Section />
     <App />
   </React.StrictMode>
 );
