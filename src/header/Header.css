@@ -1,15 +1,14 @@
-.container {
+#header-container {
     max-width: 940px;
 }
 
 h1 {
     color: #69b9ff;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     padding-top: 10px;
 }
 
-.navigation-links {
+.header-navigation-links {
 	list-style:none;
     display: flex;
     height: 100%;
@@ -20,21 +19,20 @@ h1 {
 }
 
 
-li {
+.header-navigation-links  li {
     flex: 1;
 }
 
-li:hover {
+.header-navigation-links  li:hover {
     color: #2e9dff;
 }
 
-a {
+.header-navigation-links a {
     text-align: center;
     color: #676770;
     display: block;
     text-decoration: none;
     padding: 10px;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
     
 }
