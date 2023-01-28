@@ -1,0 +1,28 @@
+.section__container {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.section__header{
+    font-size: 30px;
+    font-weight: 300;
+    color: #676770
+
+}
+
+.section__body {
+    color: #8e8e9c;
+    font-size: 18px;
+    font-weight: 300;
+    width: 50%;
+    margin: 0 auto 60px auto;
+}
+
+
+.section__card {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}

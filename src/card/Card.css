@@ -1,0 +1,19 @@
+.card {
+    max-width: 350px;
+    max-height: 350px; 
+    padding: 30px;
+}
+
+.fa-users-line {
+transform: scale(3);
+
+}
+
+.image {
+    margin: 0 auto;
+}
+
+.card-body {
+    margin-top: 30px;
+    text-align: center;
+}
