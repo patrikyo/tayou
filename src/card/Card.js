@@ -4,13 +4,13 @@ import { faUsersLine } from "@fortawesome/free-solid-svg-icons";
 
 const Card = () => {
   return (
-    <div className="card">
-      <div class="image">
+    <div className="card__container">
+      <div class="card__icon-container">
         <FontAwesomeIcon icon={faUsersLine} />
       </div>
-      <div className="card-body">
-        <h2 className="card-title">Special title treatment</h2>
-        <p className="card-text">
+      <div className="card__body">
+        <h2 className="card__title">Special title treatment</h2>
+        <p className="card__text">
           With supporting text below as a natural lead-in to additional content.
         </p>
         <a href="www.google.se" className="btn btn-primary">

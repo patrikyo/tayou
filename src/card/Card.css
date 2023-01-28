@@ -1,4 +1,4 @@
-.card {
+.card__container {
     max-width: 350px;
     max-height: 350px; 
     padding: 30px;
@@ -9,11 +9,11 @@ transform: scale(3);
 
 }
 
-.image {
+.card__icon-container {
     margin: 0 auto;
 }
 
-.card-body {
+.card__body {
     margin-top: 30px;
     text-align: center;
 }

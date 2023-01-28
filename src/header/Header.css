@@ -1,4 +1,4 @@
-#header-container {
+.header__container {
     max-width: 940px;
 }
 
@@ -8,7 +8,7 @@ h1 {
     padding-top: 10px;
 }
 
-.header-navigation-links {
+.header__navigation-links {
 	list-style:none;
     display: flex;
     height: 100%;
@@ -19,15 +19,15 @@ h1 {
 }
 
 
-.header-navigation-links  li {
+.header__navigation-links  li {
     flex: 1;
 }
 
-.header-navigation-links  li:hover {
+.header__navigation-links  li:hover {
     color: #2e9dff;
 }
 
-.header-navigation-links a {
+.header__navigation-links a {
     text-align: center;
     color: #676770;
     display: block;

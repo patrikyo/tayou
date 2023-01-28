@@ -1,13 +1,13 @@
 import "./Header.css";
 function Header() {
   return (
-    <div id="header-container" class="container pt-3">
+    <div class="header__container container pt-3">
       <div class="row">
         <div class="col-10">
           <h1>TAYOU</h1>
         </div>
         <nav class="col-2">
-          <ul class="header-navigation-links">
+          <ul class="header__navigation-links">
             <li>
               <a href="www.google.se">Hem</a>
             </li>
