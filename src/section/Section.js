@@ -2,28 +2,40 @@ import Card from "../card/Card";
 import "./Section.css";
 const Section = (props) => {
   return (
-    <div class="section__container container">
-      <div class="section__header">
-        {props.headingLevel === 2 ? (
-          <h2>{props.header}</h2>
-        ) : (
-          <h3>{props.header}</h3>
+    <div className={`section__container ${props.section.theme}`}>
+      <div className="container">
+        <div
+          className={`${
+            props.section.theme === "light"
+              ? "section__header"
+              : "section__header--dark"
+          }`}
+        >
+          {props.section.headingLevel === 2 ? (
+            <h2>{props.section.header}</h2>
+          ) : (
+            <h3>{props.section.header}</h3>
+          )}
+        </div>
+        {props.section.body.length > 0 && (
+          <div className="section__body">
+            <p>{props.section.body} </p>
+          </div>
         )}
-      </div>
-      <div class="section__body">{props.body}</div>
-      <div class="section__card">
-        <Card
-          title="kvalitet"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        />
-        <Card
-          title="kompetens"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        />
-        <Card
-          title="historik"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        />
+        <ul className="section__list">
+          {props.section.cards?.map((card) => (
+            <li>
+              <Card
+                imgUrl={card.img}
+                title={card.title}
+                description={card.body}
+                theme={props.section.theme}
+                showButton={card.button}
+                icon={card.icon}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
