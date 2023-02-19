@@ -12,7 +12,7 @@ const Card = (props) => {
       {props.icon.length > 0 && (
         <div class="card__icon-container">
           {props.icon} faUsersLine
-          <FontAwesomeIcon icon="faUsersLine" />
+          <FontAwesomeIcon icon={faUsersLine} />
         </div>
       )}
       {props.imgUrl.length > 0 && (
