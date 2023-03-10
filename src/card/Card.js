@@ -10,8 +10,7 @@ const Card = (props) => {
       }`}
     >
       {props.icon.length > 0 && (
-        <div class="card__icon-container">
-          {props.icon} faUsersLine
+        <div className="card__icon-container">
           <FontAwesomeIcon icon={faUsersLine} />
         </div>
       )}

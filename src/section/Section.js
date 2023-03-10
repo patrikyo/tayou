@@ -23,8 +23,8 @@ const Section = (props) => {
           </div>
         )}
         <ul className="section__list">
-          {props.section.cards?.map((card) => (
-            <li>
+          {props.section.cards?.map((card, index) => (
+            <li key={index}>
               <Card
                 imgUrl={card.img}
                 title={card.title}
