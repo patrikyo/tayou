@@ -1,19 +1,16 @@
 import "./Header.css";
+import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <div className="header__container container pt-3">
-      <div class="row">
+      <div className="row">
         <div className="col-10">
-          <h1>TAYOU</h1>
+          <h1>tayo</h1>
         </div>
         <nav className="col-2">
-          <ul class="header__navigation-links">
-            <li>
-              <a href="www.google.se">Hem</a>
-            </li>
-            <li>
-              <a href="www.google.se">Kontakta</a>
-            </li>
+          <ul className="header__navigation-links">
+            <li>{<NavLink to="/tayo">Hem</NavLink>}</li>
+            <li>{<NavLink to="/contact">Kontakta</NavLink>}</li>
           </ul>
         </nav>
       </div>
