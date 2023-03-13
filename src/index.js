@@ -62,7 +62,7 @@ const sectionService = new SectionClass("Tjänster", 2, "", "dark", [
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <Routes>
         <Route
           path="/tayo"
@@ -87,7 +87,8 @@ root.render(
     </BrowserRouter>
     <div className="footer_wrapper">
       <Footer></Footer>
-    </div>
+    </div> */}
+    <Section section={sectionService} />
   </React.StrictMode>
 );
 
